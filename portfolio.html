@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — UX Photographer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Existing stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════ Preloader ═══════════════════ -->
+  <div id="creative-preloader">
+    <div class="loader-content">
+      <div class="brand-logo fs-1"><span>UX</span>Photographer</div>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="./index.html">UX Photographer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pricing.html">Price</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="portfolio-hero">
+    <div class="portfolio-hero-caption fade-up">
+      <span class="eyebrow">Visual Stories</span>
+      <h1>My Portfolio</h1>
+      <p class="subtitle">Eight Categories · Infinite Moments</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PORTFOLIO MAIN ═══════════════════ -->
+  <section id="portfolio-main">
+    <div class="container-fluid px-4 px-md-5">
+
+      <!-- Section intro -->
+      <div class="category-intro fade-up">
+        <p class="section-label">Portfolio</p>
+        <h2>Stories I've Had the Honour to Tell</h2>
+        <p>Browse by category or explore the full collection — each image is a moment frozen in time.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar fade-up">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="weddings">Weddings</button>
+        <button class="filter-btn" data-filter="elopements">Elopements</button>
+        <button class="filter-btn" data-filter="engagements">Engagements</button>
+        <button class="filter-btn" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" data-filter="maternity">Maternity &amp; Family</button>
+        <button class="filter-btn" data-filter="fashion">Fashion &amp; Editorial</button>
+        <button class="filter-btn" data-filter="lifestyle">Lifestyle &amp; Travel</button>
+        <button class="filter-btn" data-filter="commercial">Commercial &amp; Products</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="portfolio-masonry" id="portfolioGrid">
+
+        <!-- ── WEDDINGS ── -->
+        <div class="pm-item pm-tall" data-cat="weddings">
+          <img src="./assets/img/hero-img-1.jpg"
+            alt="Wedding - Ceremony Aisle" loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Weddings</span>
+            <span class="pm-overlay-title">Golden Hour Ceremony</span>
+          </div>
+        </div>
+
+        <div class="pm-item pm-square" data-cat="weddings">
+          <img src="./assets/img/hero-img-2.jpg" alt="Wedding - First Look"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Weddings</span>
+            <span class="pm-overlay-title">The First Look</span>
+          </div>
+        </div>
+
+        <!-- ── ELOPEMENTS ── -->
+        <div class="pm-item pm-portrait" data-cat="elopements">
+          <img src="./assets/img/about-3.jpg"
+            alt="Elopement in the Mountains" loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Elopements</span>
+            <span class="pm-overlay-title">Mountain Elopement</span>
+          </div>
+        </div>
+
+        <!-- ── ENGAGEMENTS ── -->
+        <div class="pm-item pm-wide" data-cat="engagements">
+          <img src="./assets/img/photos-1.jpg" alt="Engagement Pre-Shoot"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Engagements</span>
+            <span class="pm-overlay-title">Sunset Pre-Shoot</span>
+          </div>
+        </div>
+
+        <!-- ── PORTRAITS ── -->
+        <div class="pm-item pm-tall" data-cat="portraits">
+          <img src="./assets/img/about-photo.jpg" alt="Cinematic Portrait"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Portraits</span>
+            <span class="pm-overlay-title">Cinematic Solo Portrait</span>
+          </div>
+        </div>
+
+        <!-- ── WEDDINGS ── -->
+        <div class="pm-item pm-wide" data-cat="weddings">
+          <img src="./assets/img/wedding-1.jpg" alt="Wedding Reception"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Weddings</span>
+            <span class="pm-overlay-title">Reception Moments</span>
+          </div>
+        </div>
+
+        <!-- ── MATERNITY & FAMILY ── -->
+        <div class="pm-item pm-square" data-cat="maternity">
+          <img src="./assets/img/family-1.jpg" alt="Maternity Shoot"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Maternity &amp; Family</span>
+            <span class="pm-overlay-title">Expecting Love</span>
+          </div>
+        </div>
+
+        <!-- ── FASHION ── -->
+        <div class="pm-item pm-portrait" data-cat="fashion">
+          <img src="./assets/img/fashion-1.jpg" alt="Fashion Editorial"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Fashion &amp; Editorial</span>
+            <span class="pm-overlay-title">High Fashion Editorial</span>
+          </div>
+        </div>
+
+        <!-- ── ELOPEMENTS ── -->
+        <div class="pm-item pm-tall" data-cat="elopements">
+          <img src="./assets/img/kiss-1.jpg" alt="Intimate Elopement"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Elopements</span>
+            <span class="pm-overlay-title">Intimate Vows</span>
+          </div>
+        </div>
+
+        <!-- ── LIFESTYLE & TRAVEL ── -->
+        <div class="pm-item pm-wide" data-cat="lifestyle">
+          <img src="./assets/img/travel-1.jpg" alt="Travel Lifestyle"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Lifestyle &amp; Travel</span>
+            <span class="pm-overlay-title">Wandering Souls</span>
+          </div>
+        </div>
+
+        <!-- ── PORTRAITS ── -->
+        <div class="pm-item pm-square" data-cat="portraits">
+          <img src="./assets/img/portraits-1.jpg" alt="Portrait Studio"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Portraits</span>
+            <span class="pm-overlay-title">Studio Elegance</span>
+          </div>
+        </div>
+
+        <!-- ── COMMERCIAL ── -->
+        <div class="pm-item pm-tall" data-cat="commercial">
+          <img src="./assets/img/product-1.jpg" alt="Commercial Watch"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Commercial &amp; Products</span>
+            <span class="pm-overlay-title">Luxury Product Shoot</span>
+          </div>
+        </div>
+
+        <!-- ── WEDDINGS ── -->
+        <div class="pm-item pm-portrait" data-cat="weddings">
+          <img src="./assets/img/about-1.jpg" alt="Bride Portrait"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Weddings</span>
+            <span class="pm-overlay-title">Bridal Portrait</span>
+          </div>
+        </div>
+
+        <!-- ── FASHION ── -->
+        <div class="pm-item pm-wide" data-cat="fashion">
+          <img src="./assets/img/fashion-2.jpg" alt="Fashion Model"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Fashion &amp; Editorial</span>
+            <span class="pm-overlay-title">Magazine Cover Shoot</span>
+          </div>
+        </div>
+
+        <!-- ── ENGAGEMENTS ── -->
+        <div class="pm-item pm-tall" data-cat="engagements">
+          <img src="./assets/img/no-name.jpg" alt="Engagement Couple"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Engagements</span>
+            <span class="pm-overlay-title">Love in Bloom</span>
+          </div>
+        </div>
+
+        <!-- ── LIFESTYLE ── -->
+        <div class="pm-item pm-square" data-cat="lifestyle">
+          <img src="./assets/img/travel-2.jpg" alt="Lifestyle Outdoors"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Lifestyle &amp; Travel</span>
+            <span class="pm-overlay-title">The Open Road</span>
+          </div>
+        </div>
+
+        <!-- ── MATERNITY ── -->
+        <div class="pm-item pm-portrait" data-cat="maternity">
+          <img src="./assets/img/family-2.jpg" alt="Family Portrait"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Maternity &amp; Family</span>
+            <span class="pm-overlay-title">Family of Three</span>
+          </div>
+        </div>
+
+        <!-- ── COMMERCIAL ── -->
+        <div class="pm-item pm-wide" data-cat="commercial">
+          <img src="./assets/img/product-2.jpg"
+            alt="Commercial Product Polaroid" loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Commercial &amp; Products</span>
+            <span class="pm-overlay-title">Brand Story</span>
+          </div>
+        </div>
+
+        <!-- ── PORTRAITS ── -->
+        <div class="pm-item pm-wide" data-cat="portraits">
+          <img src="./assets/img/portraits-2.jpg" alt="Male Portrait"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Portraits</span>
+            <span class="pm-overlay-title">The Gentleman</span>
+          </div>
+        </div>
+
+        <!-- ── ELOPEMENTS ── -->
+        <div class="pm-item pm-square" data-cat="elopements">
+          <img src="./assets/img/no-name-2.jpg" alt="Elopement Beach"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Elopements</span>
+            <span class="pm-overlay-title">Barefoot on the Shore</span>
+          </div>
+        </div>
+
+        <!-- ── FASHION ── -->
+        <div class="pm-item pm-tall" data-cat="fashion">
+          <img src="./assets/img/fashion-3.jpg" alt="Fashion Gown"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Fashion &amp; Editorial</span>
+            <span class="pm-overlay-title">Haute Couture</span>
+          </div>
+        </div>
+
+        <!-- ── WEDDINGS ── -->
+        <div class="pm-item pm-square" data-cat="weddings">
+          <img src="./assets/img/wedding-2.jpg" alt="Wedding Rings"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Weddings</span>
+            <span class="pm-overlay-title">The Exchange</span>
+          </div>
+        </div>
+
+        <!-- ── LIFESTYLE ── -->
+        <div class="pm-item pm-tall" data-cat="lifestyle">
+          <img src="./assets/img/travel-3.jpg" alt="Travel Portrait"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Lifestyle &amp; Travel</span>
+            <span class="pm-overlay-title">Into the Wild</span>
+          </div>
+        </div>
+
+        <!-- ── COMMERCIAL ── -->
+        <div class="pm-item pm-portrait" data-cat="commercial">
+          <img src="./assets/img/product-3.jpg" alt="Commercial Shoes"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Commercial &amp; Products</span>
+            <span class="pm-overlay-title">Footwear Campaign</span>
+          </div>
+        </div>
+
+        <!-- ── MATERNITY ── -->
+        <div class="pm-item pm-wide" data-cat="maternity">
+          <img src="./assets/img/family-3.jpg" alt="Maternity Outdoor"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Maternity &amp; Family</span>
+            <span class="pm-overlay-title">New Beginnings</span>
+          </div>
+        </div>
+
+        <!-- ── ENGAGEMENTS ── -->
+        <div class="pm-item pm-wide" data-cat="engagements">
+          <img src="./assets/img/no-name-3.jpg"
+            alt="Engagement Golden Light" loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Engagements</span>
+            <span class="pm-overlay-title">Golden Light Session</span>
+          </div>
+        </div>
+
+        <!-- ── PORTRAITS ── -->
+        <div class="pm-item pm-portrait" data-cat="portraits">
+          <img src="./assets/img/portraits-3.jpg" alt="Female Portrait"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Portraits</span>
+            <span class="pm-overlay-title">Ethereal Light</span>
+          </div>
+        </div>
+
+        <!-- ── LIFESTYLE ── -->
+        <div class="pm-item pm-square" data-cat="lifestyle">
+          <img src="./assets/img/place-1.jpg" alt="Cafe Lifestyle"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Lifestyle &amp; Travel</span>
+            <span class="pm-overlay-title">Slow Mornings</span>
+          </div>
+        </div>
+
+        <!-- ── FASHION ── -->
+        <div class="pm-item pm-square" data-cat="fashion">
+          <img src="./assets/img/fashion-4.jpg" alt="Fashion Street"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Fashion &amp; Editorial</span>
+            <span class="pm-overlay-title">Street Style</span>
+          </div>
+        </div>
+
+        <!-- ── COMMERCIAL ── -->
+        <div class="pm-item pm-tall" data-cat="commercial">
+          <img src="./assets/img/product-4.jpg" alt="Commercial Perfume"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Commercial &amp; Products</span>
+            <span class="pm-overlay-title">Fragrance Campaign</span>
+          </div>
+        </div>
+
+        <!-- ── ELOPEMENTS ── -->
+        <div class="pm-item pm-wide" data-cat="elopements">
+          <img src="./assets/img/no-name-4.jpg" alt="Elopement Forest"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Elopements</span>
+            <span class="pm-overlay-title">Forest Wedding</span>
+          </div>
+        </div>
+
+        <!-- ── MATERNITY ── -->
+        <div class="pm-item pm-tall" data-cat="maternity">
+          <img src="./assets/img/family-4.jpg" alt="Family Home"
+            loading="lazy">
+          <div class="pm-overlay">
+            <span class="pm-overlay-icon"><i class="bi bi-camera"></i></span>
+            <span class="pm-overlay-cat">Maternity &amp; Family</span>
+            <span class="pm-overlay-title">Home is Where You Are</span>
+          </div>
+        </div>
+
+      </div><!-- /portfolio-masonry -->
+
+      <!-- Load More -->
+      <div class="load-more-wrap fade-up">
+        <a href="./contact.html" class="btn-load-more">Book a Consultation</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CTA BAND ═══════════════════ -->
+  <section id="cta-band">
+    <div class="container text-center">
+      <h2>Ready to create something timeless?</h2>
+      <a href="./contact.html" class="btn-cta">Get in Touch</a>
+    </div>
+  </section>
+
+   <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row mb-4">
+
+        <!-- Brand -->
+        <div class="col-lg-4 mb-4 d-flex justify-content-center fade-up">
+          <div>
+            <span class="brand">UX photographer </span>
+            <p class="mb-3" style="font-size:.88rem;line-height:1.8;">Fine-art wedding & portrait
+              photography.<br>Basedin Paris — available worldwide.</p>
+            <!-- Social -->
+            <div class="d-flex justify-content-center gap-3 mt-2">
+              <a class="me-3 social-media-link" href="https://www.instagram.com/kanishka_12k?igsh=OWRqY3o5eXh1NWs0"
+                target="_blank"><i class="bi bi-instagram" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Instagram"></i></a>
+              <a class="me-3 social-media-link"
+                href="https://wa.me/94756270025?text=Hello!%20Kanishka%20web%20studio..." target="_blank"><i
+                  class="bi bi-whatsapp" data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp"></i></a>
+              <a class="me-3 social-media-link" href="https://www.facebook.com/share/1WvbgZ56et/" target="_blank"><i
+                  class="bi bi-facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i></a>
+              <a class="me-3 social-media-link" href="https://t.me/kanishka_12k" target="_blank"><i
+                  class="bi bi-telegram" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-6 mb-4 fade-up delay-200 qlinks">
+          <h3 class="mb-3" style="font-size:1rem;letter-spacing:2px;font-weight:400;">Pages</h3>
+          <ul class="list-unstyled" style="font-size:.85rem;line-height:2.2;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./pricing.html">Price</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 mb-4 col-6 fade-up delay-300 qlinks">
+          <h3 class="mb-3" style="font-size:1rem;letter-spacing:2px;font-weight:400;">Services</h3>
+          <ul class="list-unstyled" style="font-size:.85rem;line-height:2.2;">
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Elopements</a></li>
+            <li><a href="#">Engagements</a></li>
+            <li><a href="#">Albums</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 mb-4 fade-up delay-400">
+          <h3 class="mb-3" style="font-size:1rem;letter-spacing:2px;font-weight:400;">Get in Touch</h3>
+          <div id="footer-contact">
+            <span><i class="bi bi-person-fill"></i> Kanishka Dilum Bandara</span>
+            <span class="d-block"><a href="tel:+94756270025"><i class="bi bi-telephone me-2"></i>+94 75 627
+                0025</a></span>
+            <span class="d-block"><a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kanishka12K12web@gmail.com&su=Photography%20📸&body=📌%20Hello!%20Kanishka%20Web%20Studio%20🖥"
+                target="_blank"><i class="bi bi-envelope me-2"></i>kanishka12K12web@gmail.com</a></span>
+            <span class="d-block"><a href="https://maps.app.goo.gl/nC6Xv1hQBPm5MYX67" target="_blank"><i
+                  class="bi bi-geo-alt me-2"></i>Bandarawela — Kahagolla</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        <p>&copy; 2026 UX Photograper · All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ LIGHTBOX ═══════════════════ -->
+  <div id="lightbox">
+    <button id="lightbox-close"><i class="bi bi-x-lg"></i></button>
+    <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Lightbox Image">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/portfolio.js"></script>
+</body>
+
+</html>
