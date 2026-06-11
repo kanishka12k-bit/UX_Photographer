@@ -1269,14 +1269,14 @@ footer .copyright {
 /* ─── Masonry-style Portfolio Grid ─── */
 .portfolio-masonry {
   columns: 4;
-  column-gap: 8px;
+  column-gap: 4px;
 }
 
 .pm-item {
   break-inside: avoid;
   position: relative;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   cursor: pointer;
   display: block;
 }
